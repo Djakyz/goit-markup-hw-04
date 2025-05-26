@@ -158,6 +158,11 @@ address li {
 
 /* HERO STYLES */
 .hero {
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
   background-color: var(--secondary-color);
   padding-top: 188px;
   padding-bottom: 188px;
