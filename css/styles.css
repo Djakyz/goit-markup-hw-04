@@ -213,11 +213,24 @@ address li {
 }
 
 .benefits-item {
-  flex-basis: calc((100%-72px) / 4);
+  flex-basis: calc((100% - 72px) / 4);
+}
+
+.benefits-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 264px;
+  height: 112px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  background-color: var(--light-text-color);
 }
 
 .benefits-title {
   margin-bottom: 8px;
+  margin-top: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -251,6 +264,9 @@ address li {
   background-color: var(--background-color);
   border-radius: 0px 0px 4px 4px;
   flex-basis: calc((100% - 72px) / 4);
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background: #fff;
 }
 
 .team-title {
@@ -288,6 +304,33 @@ address li {
   letter-spacing: 0.02em;
   color: var(--primary-color);
   text-align: center;
+  margin-bottom: 8px;
+}
+
+.team-social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 24px;
+}
+.social-list-item {
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+.team-social-list-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 0;
+}
+.team-social-list-icon {
+  fill: var(--light-text-color);
 }
 
 /* PORTFOLIO SECTION */
