@@ -103,11 +103,25 @@ h2 {
   padding-top: 24px;
   padding-bottom: 24px;
   display: block;
+  transition: color 250ms linear;
 }
 
 .header-menu-link:hover,
-.header-menu-link:focus {
+.header-menu-link:focus,
+.header-menu-link:active {
   color: var(--accent-color);
+}
+
+.header-menu-link:active::after {
+  content: "";
+  border-radius: 2px;
+  width: 48px;
+  height: 4px;
+  background: #404bbf;
+  display: block;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .menu-list {
@@ -145,6 +159,7 @@ h2 {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-color);
+  transition: color 250ms linear;
 }
 
 .address-link:hover,
@@ -196,11 +211,12 @@ address li {
   padding: 16px 32px;
   min-width: 169px;
   border-radius: 4px;
+  transition: background-color 250ms linear;
 }
 
 .hero-button:hover,
 .hero-button:focus {
-  background-color: var(--accent-color);
+  background-color: #404bbf;
 }
 
 /* BENEFITS SECTION */
@@ -321,7 +337,14 @@ address li {
   width: 40px;
   height: 40px;
   position: relative;
+  transition: backgroubnd-color 250ms linear;
 }
+
+.social-list-item:hover,
+.social-list-item:focus {
+  background-color: #404bbf;
+}
+
 .team-social-list-link {
   position: absolute;
   top: 50%;
@@ -364,9 +387,11 @@ address li {
   border-right: 1px solid #e7e9fc;
   padding: 32px 16px;
   cursor: pointer;
+  transition: box-shadow 250ms linear;
 }
 
-.portfolio-wrapper:hover {
+.portfolio-wrapper:hover,
+.portfolio-wrapper:focus {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
@@ -458,7 +483,6 @@ address li {
 
 .footer-social-title {
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
@@ -472,12 +496,22 @@ address li {
   width: 40px;
   height: 40px;
   position: relative;
+  transition: background-color 250ms linear;
 }
-.footer-social-list-icon {
-  fill: var(--light-text-color);
+
+.footer-social-item:hover,
+.footer-social-item:focus {
+  background-color: #31d0aa;
+}
+
+.footer-social-list-link {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   line-height: 0;
+}
+
+.footer-social-list-icon {
+  fill: var(--light-text-color);
 }
