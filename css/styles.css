@@ -108,7 +108,7 @@ h2 {
   padding-top: 24px;
   padding-bottom: 24px;
   display: block;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-list > li:first-child > .header-menu-link {
@@ -132,8 +132,6 @@ h2 {
   background-color: var(--hover-color);
   display: block;
   margin-top: 20px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .menu-list {
@@ -351,7 +349,6 @@ address li {
   width: 40px;
   height: 40px;
   position: relative;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-social-list-link {
@@ -363,6 +360,7 @@ address li {
   width: 100%;
   height: 100%;
   line-height: 0;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-social-list-link:hover,
@@ -529,7 +527,7 @@ address li {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 250ms linear;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-list-link:hover,
